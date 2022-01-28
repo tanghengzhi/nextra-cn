@@ -1,15 +1,14 @@
-# Code Highlighting
+# 代码高亮
 
-`nextra-theme-docs` uses [Prism](https://prismjs.com) and [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer) 
-to highlight the code blocks. This section covers how you can customze it.
+`nextra-theme-docs` 使用 [Prism](https://prismjs.com) 和 [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer) 
+来高亮显示代码块。本节将介绍如何自定义配置。
 
-## More Languages
+## 更多语言
 
-To keep the bundle small, only a [subset of languages](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js)
-are included in the syntax highlighter. If you want to add more languages, you can do the following:
+为了保持较小的打包体积，默认仅支持[部分语言](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js)的代码高亮显示。如果你想要支持更多语言, 可以安装以下步骤操作:
 
-1. Run `yarn add prismjs prism-react-renderer` to add dependencies to your Nextra project.
-2. Add the following code to your `pages/_app.js`:
+1. 运行 `yarn add prismjs prism-react-renderer` 向你的 Nextra 项目添加依赖。
+2. 在 `pages/_app.js` 文件里面添加下面代码:
 
 ```jsx
 import Prism from 'prism-react-renderer/prism'
@@ -20,7 +19,7 @@ require("prismjs/components/prism-kotlin")
 require("prismjs/components/prism-csharp")
 ```
 
-Restart your app and you will have Kotlin and C# code highlighting supported. 
-You can find the full list of available languages [here](https://github.com/PrismJS/prism/tree/master/components).
+重新启动应用，就可以支持 Kotlin 和 C# 代码的高亮显示了。
+您可以在[这里](https://github.com/PrismJS/prism/tree/master/components)找到支持语言的完整列表。
 
 {/*## Custom Themes*/}

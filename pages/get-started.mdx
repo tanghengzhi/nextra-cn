@@ -1,23 +1,23 @@
-# Get Started
+# 立即开始
 
-## Quick Start with Vercel
+## 使用 Vercel 快速开始
 
-You can start by creating your own Nextra site and deploying to Vercel by clicking the link:
+你可以通过点击下面的链接创建自己的 Nextra 网站并部署到 Vercel:
 
 [![](https://vercel.com/button)](https://vercel.com/new/clone?demo-description=Markdown%20powered%20docs%20site.%20Built%20with%20Next.js.&demo-image=https%3A%2F%2Fnextra.vercel.app%2Fdemo.png&demo-title=Documentation%20Starter%20Kit&demo-url=https%3A%2F%2Fnextra.vercel.app%2F&project-name=nextjs-docs&repository-name=nextjs-docs&s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&from=templates)
 
-Vercel will create the Nextra repository and deploy the site for you with just a few clicks.  
-Once done, every change in the repository will be deployed automatically.
+Vercel 会自动为你创建 Nextra 仓库和部署网站.
+创建成功之后, 你在仓库里面的每次修改都会自动部署到 Vercel.
 
-## Create Manually
+## 手动安装
 
-Nextra works like a Next.js plugin, and it accepts a theme config (layout) to render the page. To start:
+Nextra 的工作原理类似 Next.js 插件, 并且通过主题配置 (布局) 来渲染页面. To start:
 
-1. Install Next.js, Nextra and React: `yarn add next nextra react react-dom`
+1. 安装 Next.js, Nextra 和 React: `yarn add next nextra react react-dom`
 
-2. Install the docs theme (you can use any theme you like): `yarn add nextra-theme-docs`
+2. 安装文档主题 (您可以使用您喜欢的任何主题): `yarn add nextra-theme-docs`
 
-3. Create the following Next.js config:
+3. 创建如下的 Next.js 配置:
 
 ```jsx
 // next.config.js
@@ -29,7 +29,7 @@ const withNextra = require('nextra')({
 module.exports = withNextra()
 ```
 
-4. Create a `theme.config.js` file for the docs theme:
+4. 为文档主题创建一个 `theme.config.js` 配置文件:
 
 ```jsx
 // theme.config.js
@@ -64,11 +64,10 @@ export default {
 import Callout from 'nextra-theme-docs/callout'
 
 <Callout>
-  More configuration options for the docs theme can be found
-  [here](/themes/docs/configuration).
+  [点击这里](/themes/docs/configuration)查看更多文档主题的配置选项。
 </Callout>
 
-5. Create `pages/_app.js` and include the theme stylesheet:
+5. 创建 `pages/_app.js` 并引入主题样式表:
 
 ```jsx
 import 'nextra-theme-docs/style.css'
@@ -78,18 +77,17 @@ export default function Nextra({ Component, pageProps }) {
 }
 ```
 
-6. You are good to go! Run `yarn next` to start.
+6. 一切准备就绪! 运行 `yarn next` 启动吧。
 
 ---
 
 <span id="sidebar-and-anchor-links" />
 <Callout>
-  Any `.md` or `.mdx` file will turn into a doc page and be displayed in
-  sidebar. You can also create a `meta.json` file to customize the page order
-  and title. <br /> Check the source code: https://github.com/shuding/nextra for
-  more information.
+  任何 `.md` 或者 `.mdx` 后缀的文件都会转成文档页面并且在侧边栏上显示。
+  你也可以通过创建一个 `meta.json` 文件来自定义页面标题和排序。<br /> 
+  查看源代码: https://github.com/shuding/nextra 获取更多信息。
 </Callout>
 
 <Callout>
-You can also use [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) to style elements inside `theme.config.js`.
+你也可以使用 [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) 去设置 `theme.config.js` 内部元素的样式。
 </Callout>

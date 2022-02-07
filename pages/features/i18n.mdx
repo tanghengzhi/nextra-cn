@@ -1,12 +1,12 @@
 import Callout from 'nextra-theme-docs/callout'
 
-# Next.js I18n
+# 多语言支持
 
-<Callout emoji="⚠️">This feature is only available in the docs theme.</Callout>
+<Callout emoji="⚠️">此功能仅在文档主题中可用。</Callout>
 
-Nextra supports [Next.js Internationalized Routing](https://nextjs.org/docs/advanced-features/i18n-routing) out of the box.
+Nextra 支持开箱即用的 [Next.js 国际化路由](https://nextjs.org/docs/advanced-features/i18n-routing)。
 
-To add multi-language pages to your Nextra application, just need to config `i18n` in `next.config.js`:
+要将多语言页面添加到 Nextra 应用，只需在 `next.config.js` 中配置 `i18n`：
 
 ```js
 // next.config.js
@@ -19,7 +19,7 @@ module.exports = withNextra({
 })
 ```
 
-Then, add the locale codes to your file extensions (required for the default locale too):
+然后，将语言代码添加到文件扩展名（默认语言也需要）：
 
 ```plaintext
 /pages
@@ -32,7 +32,7 @@ Then, add the locale codes to your file extensions (required for the default loc
   ...
 ```
 
-Finally, add the `i18n` option to your `theme.config.js` to configure the language dropdown:
+最后，将 `i18n` 选项添加到 `theme.config.js` 以配置语言下拉列表：
 
 ```jsx
 i18n: [

@@ -1,23 +1,23 @@
-# 立即开始
+# 快速上手
 
 ## 使用 Vercel 快速开始
 
-你可以通过点击下面的链接创建自己的 Nextra 网站并部署到 Vercel:
+你可以通过点击下面的链接创建自己的 Nextra 网站并且一键部署到 Vercel：
 
 [![](https://vercel.com/button)](https://vercel.com/new/clone?demo-description=Markdown%20powered%20docs%20site.%20Built%20with%20Next.js.&demo-image=https%3A%2F%2Fnextra.vercel.app%2Fdemo.png&demo-title=Documentation%20Starter%20Kit&demo-url=https%3A%2F%2Fnextra.vercel.app%2F&project-name=nextjs-docs&repository-name=nextjs-docs&s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&from=templates)
 
-Vercel 会自动为你创建 Nextra 仓库和部署网站.
-创建成功之后, 你在仓库里面的每次修改都会自动部署到 Vercel.
+只需单击几下，Vercel 就会为你创建 Nextra 代码仓库和部署网站。
+一旦完成之后，你在代码仓库里面的每次修改都会自动部署到 Vercel。
 
 ## 手动安装
 
-Nextra 的工作原理类似 Next.js 插件, 并且通过主题配置 (布局) 来渲染页面. To start:
+Nextra 的工作原理类似 Next.js 插件, 它通过主题配置 (布局) 来渲染页面。安装步骤如下：
 
-1. 安装 Next.js, Nextra 和 React: `yarn add next nextra react react-dom`
+1. 安装 Next.js, Nextra 和 React：`yarn add next nextra react react-dom`
 
-2. 安装文档主题 (您可以使用您喜欢的任何主题): `yarn add nextra-theme-docs`
+2. 安装文档主题（你可以使用你喜欢的任何主题）：`yarn add nextra-theme-docs`
 
-3. 创建如下的 Next.js 配置:
+3. 创建如下的 Next.js 配置：
 
 ```jsx
 // next.config.js
@@ -29,7 +29,7 @@ const withNextra = require('nextra')({
 module.exports = withNextra()
 ```
 
-4. 为文档主题创建一个 `theme.config.js` 配置文件:
+4. 为文档主题创建 `theme.config.js` 配置文件：
 
 ```jsx
 // theme.config.js
@@ -67,7 +67,7 @@ import Callout from 'nextra-theme-docs/callout'
   [点击这里](/themes/docs/configuration)查看更多文档主题的配置选项。
 </Callout>
 
-5. 创建 `pages/_app.js` 并引入主题样式表:
+5. 创建 `pages/_app.js` 并引入主题样式表：
 
 ```jsx
 import 'nextra-theme-docs/style.css'
@@ -77,17 +77,17 @@ export default function Nextra({ Component, pageProps }) {
 }
 ```
 
-6. 一切准备就绪! 运行 `yarn next` 启动吧。
+6. 一切准备就绪! 运行 `yarn next` 启动网站吧。
 
 ---
 
 <span id="sidebar-and-anchor-links" />
 <Callout>
-  任何 `.md` 或者 `.mdx` 后缀的文件都会转成文档页面并且在侧边栏上显示。
-  你也可以通过创建一个 `meta.json` 文件来自定义页面标题和排序。<br /> 
+  任何 `.md` 或者 `.mdx` 文件都会被转成文档页面并且在侧边栏上显示。
+  你也可以通过创建 `meta.json` 配置文件来自定义页面标题和显示顺序。<br /> 
   查看源代码: https://github.com/shuding/nextra 获取更多信息。
 </Callout>
 
 <Callout>
-你也可以使用 [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) 去设置 `theme.config.js` 内部元素的样式。
+你还可以使用 [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) 来设置 `theme.config.js` 中的元素样式。
 </Callout>

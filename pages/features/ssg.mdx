@@ -1,8 +1,8 @@
 # Next.js SSG
 
-With Next.js, you can pre-render your page using [Static Generation (SSG)](https://nextjs.org/docs/basic-features/pages#static-generation-recommended). Your pages will be generated at build time and statically served to visitors. It can also be cached by a CDN to maximize the performance.
+使用 Next.js，你可以使用[静态生成（SSG）](https://nextjs.org/docs/basic-features/pages#static-generation-recommended)来预渲染页面。您的页面将在构建时生成，并静态提供给访问者。另外还可以通过 CDN 缓存，以最大限度地提高性能。
 
-This is supported by Nextra too. Here's an example:
+Nextra 也支持这一特性。下面是一个示例：
 
 import { useSSG } from 'nextra/ssg'
 
@@ -32,11 +32,11 @@ export const Stars = () => {
   Nextra has <Stars /> stars on GitHub!
 </div>
 
-The number above was generated at build time via `getStaticProps`. With [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) enabled, it will be kept up to date.
+上面的数字是在构建时通过 `getStaticProps` 生成的。启用 [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) 后，它将一直保持最新状态。
 
 ---
 
-Here's the MDX code for the example above:
+下面是上述示例的 MDX 代码：
 
 ```js
 import { useSSG } from 'nextra/ssg'

@@ -2,6 +2,6 @@
   "mdx": "MDX",
   "ssg": "静态生成",
   "i18n": "多语言支持",
-  "image": "Next.js Image",
+  "image": "图片组件",
   "themes": "主题"
 }

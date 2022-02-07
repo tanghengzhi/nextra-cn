@@ -1,8 +1,8 @@
 # Next.js Image
 
-You can use [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization) directly in MDX.
+您可以直接在 MDX 中使用 [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization)。
 
-If the `demo.png` file is located at `/public/demo.png`, you can use the code below to display it:
+如果 `demo.png` 文件位于 `/public/demo.png`，则可以使用下面的代码来显示它：
 
 ```markdown
 import Image from 'next/image'
@@ -10,23 +10,21 @@ import Image from 'next/image'
 <Image src="/demo.png" alt="Hello" width={500} height={500} />
 ```
 
-## Static Image
+## 静态图片
 
 import Callout from 'nextra-theme-docs/callout'
 
 <Callout emoji="⚠️">
-  You need to opt-in to this feature by enabling [`unstable_staticImage:
-  true`](/get-started#create-manually).
+  您需要通过启用 [`unstable_staticImage: true`](/get-started#create-manually) 来选择加入此功能。
 </Callout>
 
-Nextra also supports automatic static image imports, you no longer need to specify the width and height of the image manually,
-and you can directly use the Markdown syntax to display the same image:
+Nextra 还支持自动静态图像导入，你不需要手动指定图片的宽度和高度，并且可以直接使用 Markdown 语法来显示相同的图片：
 
 ```markdown
 ![Hello](../../public/demo.png)
 ```
 
-With Next.js Image, there will be no layout shift, and a beautiful blury placeholder will be shown by default when loading the images:
+使用 Next.js Image，不会有布局偏移，并且在加载图像时会默认显示一个美丽的模糊占位符：
 
 <br />
 

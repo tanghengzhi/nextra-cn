@@ -1,7 +1,7 @@
 {
   "mdx": "MDX",
-  "ssg": "静态生成",
+  "ssg": "Next.js SSG",
   "i18n": "多语言支持",
-  "image": "图片组件",
+  "image": "Next.js Image",
   "themes": "主题"
 }
